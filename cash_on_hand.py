@@ -49,4 +49,4 @@ with output.open(mode='a', encoding="UTF-8") as output_file:
     for day, deficit in enumerate(deficits_list):
 
         # Write which days had deficits and the amount of the deficit
-        output_file.write(f"Day {day + 1}, Deficit: {deficit}\n")
+        output_file.write(f"[CASH DEFICIT] Day {day + 1}, Deficit: {deficit}\n")

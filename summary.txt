@@ -68,93 +68,93 @@
 [PROFIT DEFICIT] DAY: 88, AMOUNT: USD15158
 [PROFIT DEFICIT] DAY: 89, AMOUNT: USD8123
 [PROFIT DEFICIT] DAY: 91, AMOUNT: USD28127
-Day 1, Deficit: 12600
-Day 2, Deficit: 143960
-Day 3, Deficit: 3008070
-Day 4, Deficit: 30070
-Day 5, Deficit: 28070
-Day 6, Deficit: 262070
-Day 7, Deficit: -12455
-Day 8, Deficit: 2245
-Day 9, Deficit: 2246
-Day 10, Deficit: -739774
-Day 11, Deficit: 296001
-Day 12, Deficit: -742944
-Day 13, Deficit: 626704
-Day 14, Deficit: 107279
-Day 15, Deficit: -184253
-Day 16, Deficit: 645912
-Day 17, Deficit: -179058
-Day 18, Deficit: 25134
-Day 19, Deficit: 136423
-Day 20, Deficit: 28494
-Day 21, Deficit: 2000
-Day 22, Deficit: -237430
-Day 23, Deficit: 58392
-Day 24, Deficit: 50011
-Day 25, Deficit: 32821
-Day 26, Deficit: 52555
-Day 27, Deficit: -3243
-Day 28, Deficit: 30362
-Day 29, Deficit: -2585
-Day 30, Deficit: 16290
-Day 31, Deficit: -12773
-Day 32, Deficit: 9355
-Day 33, Deficit: -497146
-Day 34, Deficit: 76155
-Day 35, Deficit: -3700
-Day 36, Deficit: 1956
-Day 37, Deficit: -282179
-Day 38, Deficit: 443929
-Day 39, Deficit: -399137
-Day 40, Deficit: 547246
-Day 41, Deficit: -360338
-Day 42, Deficit: -8580
-Day 43, Deficit: 9641
-Day 44, Deficit: -11340
-Day 45, Deficit: -7361
-Day 46, Deficit: 37734
-Day 47, Deficit: 49284
-Day 48, Deficit: -31471
-Day 49, Deficit: 49541
-Day 50, Deficit: 1556
-Day 51, Deficit: 50038
-Day 52, Deficit: -53424
-Day 53, Deficit: -171705
-Day 54, Deficit: 41932
-Day 55, Deficit: -36344
-Day 56, Deficit: 228588
-Day 57, Deficit: -864
-Day 58, Deficit: -30597
-Day 59, Deficit: 8062
-Day 60, Deficit: 25521
-Day 61, Deficit: 70084
-Day 62, Deficit: 35202
-Day 63, Deficit: 17189
-Day 64, Deficit: 32631
-Day 65, Deficit: 24693
-Day 66, Deficit: -69418
-Day 67, Deficit: 72762
-Day 68, Deficit: -8462
-Day 69, Deficit: -10716
-Day 70, Deficit: 23694
-Day 71, Deficit: 6465
-Day 72, Deficit: -154418
-Day 73, Deficit: -40474
-Day 74, Deficit: 171090
-Day 75, Deficit: -8692
-Day 76, Deficit: -41223
-Day 77, Deficit: 153871
-Day 78, Deficit: -321999
-Day 79, Deficit: -296338
-Day 80, Deficit: 78638
-Day 81, Deficit: -87616
-Day 82, Deficit: 296589
-Day 83, Deficit: 183980
-Day 84, Deficit: -39026
-Day 85, Deficit: -60186
-Day 86, Deficit: -286443
-Day 87, Deficit: -12661
-Day 88, Deficit: -47996
-Day 89, Deficit: -161933
-Day 90, Deficit: -2734
+[CASH DEFICIT] Day 1, Deficit: 12600
+[CASH DEFICIT] Day 2, Deficit: 143960
+[CASH DEFICIT] Day 3, Deficit: 3008070
+[CASH DEFICIT] Day 4, Deficit: 30070
+[CASH DEFICIT] Day 5, Deficit: 28070
+[CASH DEFICIT] Day 6, Deficit: 262070
+[CASH DEFICIT] Day 7, Deficit: -12455
+[CASH DEFICIT] Day 8, Deficit: 2245
+[CASH DEFICIT] Day 9, Deficit: 2246
+[CASH DEFICIT] Day 10, Deficit: -739774
+[CASH DEFICIT] Day 11, Deficit: 296001
+[CASH DEFICIT] Day 12, Deficit: -742944
+[CASH DEFICIT] Day 13, Deficit: 626704
+[CASH DEFICIT] Day 14, Deficit: 107279
+[CASH DEFICIT] Day 15, Deficit: -184253
+[CASH DEFICIT] Day 16, Deficit: 645912
+[CASH DEFICIT] Day 17, Deficit: -179058
+[CASH DEFICIT] Day 18, Deficit: 25134
+[CASH DEFICIT] Day 19, Deficit: 136423
+[CASH DEFICIT] Day 20, Deficit: 28494
+[CASH DEFICIT] Day 21, Deficit: 2000
+[CASH DEFICIT] Day 22, Deficit: -237430
+[CASH DEFICIT] Day 23, Deficit: 58392
+[CASH DEFICIT] Day 24, Deficit: 50011
+[CASH DEFICIT] Day 25, Deficit: 32821
+[CASH DEFICIT] Day 26, Deficit: 52555
+[CASH DEFICIT] Day 27, Deficit: -3243
+[CASH DEFICIT] Day 28, Deficit: 30362
+[CASH DEFICIT] Day 29, Deficit: -2585
+[CASH DEFICIT] Day 30, Deficit: 16290
+[CASH DEFICIT] Day 31, Deficit: -12773
+[CASH DEFICIT] Day 32, Deficit: 9355
+[CASH DEFICIT] Day 33, Deficit: -497146
+[CASH DEFICIT] Day 34, Deficit: 76155
+[CASH DEFICIT] Day 35, Deficit: -3700
+[CASH DEFICIT] Day 36, Deficit: 1956
+[CASH DEFICIT] Day 37, Deficit: -282179
+[CASH DEFICIT] Day 38, Deficit: 443929
+[CASH DEFICIT] Day 39, Deficit: -399137
+[CASH DEFICIT] Day 40, Deficit: 547246
+[CASH DEFICIT] Day 41, Deficit: -360338
+[CASH DEFICIT] Day 42, Deficit: -8580
+[CASH DEFICIT] Day 43, Deficit: 9641
+[CASH DEFICIT] Day 44, Deficit: -11340
+[CASH DEFICIT] Day 45, Deficit: -7361
+[CASH DEFICIT] Day 46, Deficit: 37734
+[CASH DEFICIT] Day 47, Deficit: 49284
+[CASH DEFICIT] Day 48, Deficit: -31471
+[CASH DEFICIT] Day 49, Deficit: 49541
+[CASH DEFICIT] Day 50, Deficit: 1556
+[CASH DEFICIT] Day 51, Deficit: 50038
+[CASH DEFICIT] Day 52, Deficit: -53424
+[CASH DEFICIT] Day 53, Deficit: -171705
+[CASH DEFICIT] Day 54, Deficit: 41932
+[CASH DEFICIT] Day 55, Deficit: -36344
+[CASH DEFICIT] Day 56, Deficit: 228588
+[CASH DEFICIT] Day 57, Deficit: -864
+[CASH DEFICIT] Day 58, Deficit: -30597
+[CASH DEFICIT] Day 59, Deficit: 8062
+[CASH DEFICIT] Day 60, Deficit: 25521
+[CASH DEFICIT] Day 61, Deficit: 70084
+[CASH DEFICIT] Day 62, Deficit: 35202
+[CASH DEFICIT] Day 63, Deficit: 17189
+[CASH DEFICIT] Day 64, Deficit: 32631
+[CASH DEFICIT] Day 65, Deficit: 24693
+[CASH DEFICIT] Day 66, Deficit: -69418
+[CASH DEFICIT] Day 67, Deficit: 72762
+[CASH DEFICIT] Day 68, Deficit: -8462
+[CASH DEFICIT] Day 69, Deficit: -10716
+[CASH DEFICIT] Day 70, Deficit: 23694
+[CASH DEFICIT] Day 71, Deficit: 6465
+[CASH DEFICIT] Day 72, Deficit: -154418
+[CASH DEFICIT] Day 73, Deficit: -40474
+[CASH DEFICIT] Day 74, Deficit: 171090
+[CASH DEFICIT] Day 75, Deficit: -8692
+[CASH DEFICIT] Day 76, Deficit: -41223
+[CASH DEFICIT] Day 77, Deficit: 153871
+[CASH DEFICIT] Day 78, Deficit: -321999
+[CASH DEFICIT] Day 79, Deficit: -296338
+[CASH DEFICIT] Day 80, Deficit: 78638
+[CASH DEFICIT] Day 81, Deficit: -87616
+[CASH DEFICIT] Day 82, Deficit: 296589
+[CASH DEFICIT] Day 83, Deficit: 183980
+[CASH DEFICIT] Day 84, Deficit: -39026
+[CASH DEFICIT] Day 85, Deficit: -60186
+[CASH DEFICIT] Day 86, Deficit: -286443
+[CASH DEFICIT] Day 87, Deficit: -12661
+[CASH DEFICIT] Day 88, Deficit: -47996
+[CASH DEFICIT] Day 89, Deficit: -161933
+[CASH DEFICIT] Day 90, Deficit: -2734
