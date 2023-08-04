@@ -4,7 +4,7 @@ import csv
 
 # Create the file paths to the current working directory
 input_csv_file = Path.cwd()/"csv_reports"/"profitloss.csv"
-output_text_file = Path.cwd()/"summary.txt"
+output_text_file = Path.cwd()/"summary_report.txt"
 
 def calculate_profit_deficit(input_csv_file, output_text_file):
     # Open the input CSV file
@@ -17,7 +17,7 @@ def calculate_profit_deficit(input_csv_file, output_text_file):
         day = 0
 
         # Open the output text file in write mode
-        with open(output_text_file, 'w') as output_file:
+        with open(output_text_file, 'a') as output_file:
             # Iterate through the data (list of lists)
             for row in reader:
                 # Increment the day count

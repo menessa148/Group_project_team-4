@@ -2,51 +2,45 @@ from pathlib import Path
 import csv
 
 # Define the file path
-fp = Path.cwd()/"csv_reports"/"cash on hand.csv.csv"
+input_filename = Path.cwd()/"csv_reports"/ "cash on hand.csv.csv"
+output_filename = Path.cwd()/"summary_report.txt"
 
-# Define the summary.txt file path
-output = Path.cwd()/"summary.txt"
-
-# Open the CSV file and read its contents
-with fp.open(mode= "r", encoding="UTF-8") as file:
-    reader = csv.reader(file)
-
-    # Skip the header row
-    next(reader)
-
-    # Create a list to store the "Day" and "Cash on hand" values
-    coh = []
-
-    # Read each row in the CSV file and append the "Day" and "Cash on hand"
-    for row in reader:
-        coh.append([row[0], row[1]])
-
-# Define a function to calculate deficits for each day
-def calculate_deficit(coh):
+# Define a function to calculate deficits for specific days
+def compute_cash_deficit(input_filename, output_filename):
     """
-    Function would give the deficits on the days that the 
-    current days is lower than the previous day
+    Function would calculate the days that has deficits
     One parameter required
     """
 
-    deficits = []
+    # Open the CSV file and read the contents
+    with open(input_filename, 'r') as input_file:
+        csv_reader = csv.reader(input_file)
 
-    # Calculate the deficit for each day
-    for current in range(1, len(coh)):
-        prev_day_cash = int(coh[current - 1][1])
-        current_day_cash = int(coh[current][1])
-        deficit = prev_day_cash - current_day_cash
-        deficits.append(deficit)
+        # Skip the header row
+        next(csv_reader)  
+        
+        # Create a list to store the "Day" and "Cash on Hand" values
+        cash_data = []
 
-    return deficits
+        # Read each row in the CSV file and append the "Day" and "Cash on Hand"
+        for row in csv_reader:
+            day = int(row[0])
+            cash_on_hand = int(row[1])
+            cash_data.append((day, cash_on_hand))
 
-# Call the function to calculate deficits and store the results in deficits_list
-deficits_list = calculate_deficit(coh)
+    # Create a list to store the cash deficits
+    cash_deficits = []
 
-# Opening the summary.txt file and appending the deficits to it
-with output.open(mode='a', encoding="UTF-8") as output_file:
+    # Check for cash deficit by comparing current day's cash with previous day's cash
+    for i in range(1, len(cash_data)):
+        if cash_data[i][1] < cash_data[i - 1][1]:
+            deficit_amount = cash_data[i - 1][1] - cash_data[i][1]
+            cash_deficits.append((cash_data[i][0], deficit_amount))
+    
+    # Write cash deficits to the output file
+    with open(output_filename, 'a') as output_file:
+        for day, amount in cash_deficits:
+            output_file.write(f"[CASH DEFICIT] DAY: {day}, AMOUNT: USD{amount}\n")
 
-    for day, deficit in enumerate(deficits_list):
-
-        # Write which days had deficits and the amount of the deficit
-        output_file.write(f"[CASH DEFICIT] Day {day + 1}, Deficit: {deficit}\n")
+# Calling the function
+compute_cash_deficit(input_filename, output_filename)

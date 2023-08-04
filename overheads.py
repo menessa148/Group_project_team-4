@@ -11,6 +11,8 @@ def overhead_function():
 
     # Assign "overheads-day-90.csv" file located in the current working directory to variable file_path
     file_path = Path.cwd()/"csv_reports"/"overheads-day-90.csv"
+    summary_report = Path.cwd()/"summary_report.txt"
+    summary_report.touch()
 
     # Open the file in read mode with UTF-8 encoding and no newline conversion
     with file_path.open(mode = "r",encoding = "UTF-8", newline="") as file:
@@ -48,12 +50,18 @@ def overhead_function():
     # Find the highest overhead value from the dictionary values
     highest_number = max(overheads_dict.values())
 
-    # Iterate through the dictionary items
-    for category, value in overheads_dict.items():
-         # Check if the overhead value matches the highest overhead value
-        if value == highest_number:
-            # Return a formatted string indicating the category with the highest overhead value
-            return f"[HIGHEST OVERHEAD] {category.upper()}: {highest_number}%"
+
+# Open the summary_report text file with write mode
+    with summary_report.open(mode="a", encoding = "UTF-8", newline = "") as file_2:
+
+    # Iterate through the dictionary items   
+        for category, value in overheads_dict.items():
+
+    # Check if the overhead value matches the highest overhead value
+            if value == highest_number:
+
+            # Write the highest overhead with the category and respective value to the summary report file
+                file_2.write(f"[HIGHEST OVERHEAD] {category.upper()}: {highest_number}%\n")
 
 # print overhead_function
 print(overhead_function())
