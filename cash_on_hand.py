@@ -1,15 +1,16 @@
 from pathlib import Path
 import csv
 
-# Define the file path
+# Define input and output file paths using pathlib
 input_filename = Path.cwd()/"csv_reports"/ "cash on hand.csv.csv"
 output_filename = Path.cwd()/"summary_report.txt"
 
-# Define a function to calculate deficits for specific days
-def compute_cash_deficit(input_filename, output_filename):
+# Function to compute cash deficits and write to the output file
+def compute_cash_deficit():
     """
-    Function would calculate the days that has deficits
-    One parameter required
+    The function computes cash on hand difference if 
+    current day's cash is lower than the previous day's.
+    No parameter required.
     """
 
     # Open the CSV file and read the contents
@@ -19,7 +20,7 @@ def compute_cash_deficit(input_filename, output_filename):
         # Skip the header row
         next(csv_reader)  
         
-        # Create a list to store the "Day" and "Cash on Hand" values
+        # Create an empty list to store the "Day" and "Cash on Hand" values
         cash_data = []
 
         # Read each row in the CSV file and append the "Day" and "Cash on Hand"
@@ -43,4 +44,4 @@ def compute_cash_deficit(input_filename, output_filename):
             output_file.write(f"[CASH DEFICIT] DAY: {day}, AMOUNT: USD{amount}\n")
 
 # Calling the function
-compute_cash_deficit(input_filename, output_filename)
+compute_cash_deficit()

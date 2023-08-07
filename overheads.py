@@ -1,15 +1,15 @@
 from pathlib import Path
 import csv
 
-# Creation of overhead_function function
+# Creation of overhead_function 
 def overhead_function():
     """
-    - Function will give the highest overhead of the business over the 90 days
-    - No parameter required
-    - ????
+    The function will give the highest overhead of the business over the 90 days.
+    No parameter required.
     """ 
 
-    # Assign "overheads-day-90.csv" file located in the current working directory to variable file_path
+    # Assign "overheads-day-90.csv" file located in the current working 
+    # directory to variable file_path
     file_path = Path.cwd()/"csv_reports"/"overheads-day-90.csv"
     summary_report = Path.cwd()/"summary_report.txt"
     summary_report.touch()
@@ -33,7 +33,8 @@ def overhead_function():
             # the category and overhead as a list to overheads_list
             overheads_list.append([row[0],float(row[1])])
 
-    # Create an empty dictionary to store category as keys and overhead values as values
+    # Create an empty dictionary to store category as keys 
+    # and overhead values as values
     overheads_dict = {}
 
     # Iterate through each item in overheads_list
@@ -41,17 +42,20 @@ def overhead_function():
 
         # Check if the category already exists in the dictionary
         if category in overheads_dict:
-            # If the category exists, update the value with the maximum of the current overhead and the existing value
+            # If the category exists, update the value with the maximum 
+            # of the current overhead and the existing value
             overheads_dict[category] = max(overheads_dict[category], overheads)
+
         else:
-            # If the category doesn't exist, add a new entry to the dictionary with the current overhead value
+            # If the category doesn't exist, add a new entry to the 
+            # dictionary with the current overhead value
             overheads_dict[category] = overheads
     
     # Find the highest overhead value from the dictionary values
     highest_number = max(overheads_dict.values())
 
 
-# Open the summary_report text file with write mode
+# Open the summary_report text file with append mode
     with summary_report.open(mode="a", encoding = "UTF-8", newline = "") as file_2:
 
     # Iterate through the dictionary items   
@@ -60,8 +64,9 @@ def overhead_function():
     # Check if the overhead value matches the highest overhead value
             if value == highest_number:
 
-            # Write the highest overhead with the category and respective value to the summary report file
+            # Write the highest overhead with the category and respective value 
+            # to the summary report file
                 file_2.write(f"[HIGHEST OVERHEAD] {category.upper()}: {highest_number}%\n")
 
-# print overhead_function
-print(overhead_function())
+# Calling the function
+overhead_function()
