@@ -10,6 +10,7 @@ def calculate_profit_deficit():
     The function computes profit and loss difference if 
     current day's amount is lower than the previous day's.
     No parameter required.
+    
     """
 
     # Open the input CSV file
